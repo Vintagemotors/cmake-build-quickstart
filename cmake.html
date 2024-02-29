@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CMake Quickstart</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans&Source+Sans+Pro&Roboto+Mono&display=swap">
+<style>
+  body {
+    font-family: "PT Sans";
+    font-size: 17px;
+    color: #b4b4b4;
+    background: #091a28;
+  }
+
+  code {
+    font-family: Roboto Mono, Monaco, courier, monospace;
+    color: #ffffff;
+    background-color: #0e2233;
+  }
+
+  blockquote {
+    color: #858585;
+  }
+
+  /* Additional specific styles */
+  .accent {
+    color: #42b983;
+  }
+
+  .border {
+    border-color: #0d2538;
+  }
+
+  .highlight {
+    color: #d22778;
+  }
+
+</style>
+</head>
+
+<body style="padding-top: 40px; margin-left: 10%; margin-right: 10%;">
+
+    <h1 style="text-align: center; margin-bottom: 0; font-size: 36px;">CMake for absolute beginners (by a recent absolute beginner)</h1>
+    <br>
+    <br>
+	Go <a href="https://makefiletutorial.com/">here</a> for advanced stuff. 
+	<br>
+	<h2>Makefile Build + install</h2>
+	
+	Go to the source folder you downloaded and extract it. Open a terminal. If the source directory already has a build folder <code class="highlight" style="font-weight: bold;">cd</code> to it, if not <code class="highlight" style="font-weight: bold;">cd</code> to the source directory and run <code class="highlight" style="font-weight: bold;">mkdir build</code> then <code class="highlight" style="font-weight: bold;">cd build</code> after that run <code class="highlight" style="font-weight: bold;">make</code> if you are on a UNIX system (like Linux or MacOS) and you want the application to be installed where your normal applications are so you can find it easily and search for it run <code class="highlight" style="font-weight: bold;">make install</code>. 
+	
+	<h2>CMakelists.txt Build + install</h2>
+		
+	Go to the source folder you downloaded and extract it. Open a terminal. If the source directory already has a build folder <code class="highlight" style="font-weight: bold;">cd</code> to it, if not <code class="highlight" style="font-weight: bold;">cd</code> to the source directory and run <code class="highlight" style="font-weight: bold;">mkdir build</code> then <code class="highlight" style="font-weight: bold;">cd build</code> after that run <code class="highlight" style="font-weight: bold;">cmake ..</code> then run <code class="highlight" style="font-weight: bold;">make</code> if you are on a UNIX system (like Linux or MacOS) and you want the application to be installed where your normal applications are so you can find it easily and search for it run <code class="highlight" style="font-weight: bold;">make install</code>. 
+	
+	<h2>Dependency Errors</h2> 
+	
+	Start by checking to see if the project has a list of dependencies under a building page or in the docs, if it does then install them. If it doesn't then check to see if they have a GitHub actions script under .github/workflows and if they do, see what dependencies it is installing. For windows you can install with chocolatey or another package manager, on MacOS you can use MacPorts or brew (brew will complain and often have some errors if it's not being run on the absolute latest system so I prefer MacPorts). On linux you can use your distribution's default package manager such as apt, apt=get, pacman and so on. 
+
+</body>
+	
+</html>
